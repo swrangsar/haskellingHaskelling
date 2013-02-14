@@ -1,3 +1,5 @@
+-- find the largest prime factor of a huge number
+
 isPrime :: Integer -> Bool
 isPrime x = null $ filter (\y -> mod x y == 0) $ takeWhile (\y -> y*y <= x) [2..]
 
